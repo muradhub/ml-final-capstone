@@ -1,0 +1,51 @@
+% =====================================================================
+% contribution_report.tex -- Team Contribution Report
+% Ensemble Methods: Boosting vs. Bagging -- Team StarPlatinum
+% Compile with:  pdflatex contribution_report.tex
+% =====================================================================
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=2.7cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\definecolor{spPurple}{HTML}{4B2E83}
+\definecolor{spGold}{HTML}{C9A227}
+\definecolor{spGray}{HTML}{5A5A5A}
+
+\hypersetup{colorlinks=true, linkcolor=spPurple, urlcolor=spPurple}
+
+\titleformat{\section}{\large\bfseries\color{spPurple}}{\thesection}{0.6em}{}
+\titlespacing*{\section}{0pt}{1.6em}{0.7em}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% ----- Header ----------------------------------------------------------
+\begin{center}
+{\LARGE\bfseries\color{spPurple} Team Contribution Report}\\[0.3em]
+{\large Ensemble Methods: Boosting vs.\ Bagging}\\[0.2em]
+{\normalsize\color{spGray} Team StarPlatinum \quad|\quad AI Academy, National AI Center --- Machine Learning, Spring 2026}
+\end{center}
+
+\vspace{0.3cm}
+{\color{spPurple}\hrule height 1pt}
+\vspace{0.6cm}
+
+\noindent This report summarizes the work carried out by each member of Team StarPlatinum over the course of the project. All members collaborated closely throughout, with regular discussion and review across each other's work.
+
+\section*{Davud Gurbanov}
+Wrote the project report and led the presentation, designing and preparing the full slide deck used for the defense. Implemented the AdaBoost (\texttt{adaboost.py}) and DBSCAN (\texttt{dbscan.py}) modules, and produced the plots and figures used throughout the report and slides.
+
+\section*{Gurban Burjuzada}
+Implemented the Decision Tree module, the core building block used by both ensemble methods, and the K-Means clustering module (\texttt{kmeans.py}). Built and maintained the \texttt{experiments/} folder, including the scripts used to run and reproduce the project's experiments.
+
+\section*{Murad Asgarov}
+Implemented the PCA module (\texttt{pca.py}) and the Random Forest module. Wrote the test suite (\texttt{tests/}) covering the project's implementations, and developed the analysis notebooks used to explore the data and validate results.
+
+\end{document}
